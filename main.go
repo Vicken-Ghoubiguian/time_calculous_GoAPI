@@ -25,5 +25,19 @@ func main() {
   })
 
   //
+  r.GET("/wished_wday_in_choosen_month", func(c *gin.Context) {
+
+    //
+    c.JSON(http.StatusOK, gin.H{"data": "TODO"})
+  })
+
+  //
+  r.GET("/number_of_weeks_in_a_year_according_to_the_iso_norm", func(c *gin.Context) {
+ 
+    //
+    c.JSON(http.StatusOK, gin.H{"data": "TODO"})
+  })
+
+  //
   r.Run()
 }
