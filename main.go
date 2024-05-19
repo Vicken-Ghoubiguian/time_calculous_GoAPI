@@ -21,7 +21,7 @@ func main() {
   r.GET("/", func(c *gin.Context) {
 
     //
-    c.JSON(http.StatusOK, gin.H{"title": "time_calculous_GoAPI", "presentation": "", "links": gin.H{"github": "https://github.com/Vicken-Ghoubiguian/time_calculous_GoAPI", "dockerhub": ""}})
+    c.JSON(http.StatusOK, gin.H{"title": "time_calculous_GoAPI", "presentation": "", "description": "", "links": gin.H{"github": "https://github.com/Vicken-Ghoubiguian/time_calculous_GoAPI", "dockerhub": ""}})
   })
 
   //
