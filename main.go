@@ -1,47 +1,48 @@
-//
 package main
 
 //
 import (
 
-  //
-  "net/http"
+	//
+	"net/http"
 
-  //
-  "github.com/gin-gonic/gin"
+	//
+	"github.com/gin-gonic/gin"
 )
 
-//
 func main() {
 
-  //
-  r := gin.Default()
+	//
+	r := gin.Default()
 
-  //
-  r.GET("/", func(c *gin.Context) {
+	//
+	r.StaticFile("/favicon.ico", "./logo/favicon.ico")
 
-    //
-    c.JSON(http.StatusOK, gin.H{"title": "time_calculous_GoAPI", "presentation": "", "description": "", "links": gin.H{"github": "https://github.com/Vicken-Ghoubiguian/time_calculous_GoAPI", "dockerhub": ""}})
-  })
+	//
+	r.GET("/", func(c *gin.Context) {
 
-  //
-  r.GET("/wished_wday_in_choosen_month/:wday/:month", func(c *gin.Context) {
+		//
+		c.JSON(http.StatusOK, gin.H{"title": "time_calculous_GoAPI", "presentation": "", "description": "", "links": gin.H{"github": "https://github.com/Vicken-Ghoubiguian/time_calculous_GoAPI", "dockerhub": ""}})
+	})
 
-    //
-    c.JSON(http.StatusOK, gin.H{"data": "TODO"})
-  })
+	//
+	r.GET("/wished_wday_in_choosen_month/:wday/:month", func(c *gin.Context) {
 
-  //
-  r.GET("/number_of_weeks_in_year/:year", func(c *gin.Context) {
+		//
+		c.JSON(http.StatusOK, gin.H{"data": "TODO"})
+	})
 
-    //
-    year := c.Param("year")
-    number_of_weeks := 13
- 
-    //
-    c.JSON(http.StatusOK, gin.H{"year": year, "number_of_weeks": number_of_weeks})
-  })
+	//
+	r.GET("/number_of_weeks_in_year/:year", func(c *gin.Context) {
 
-  //
-  r.Run()
+		//
+		year := c.Param("year")
+		number_of_weeks := 13
+
+		//
+		c.JSON(http.StatusOK, gin.H{"year": year, "number_of_weeks": number_of_weeks})
+	})
+
+	//
+	r.Run()
 }
