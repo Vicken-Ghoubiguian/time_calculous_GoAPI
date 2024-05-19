@@ -65,11 +65,11 @@ func main() {
 	})
 
 	//
-	/*r.GET("/wished_wday_in_choosen_month/:wday/:month", func(c *gin.Context) {
+	r.GET("/number_of_days_in_choosen_month_in_choosen_year/:month/:year", func(c *gin.Context) {
 
 		//
 		c.JSON(http.StatusOK, gin.H{"data": "TODO"})
-	})*/
+	})
 
 	//
 	r.Run()
