@@ -25,7 +25,7 @@ func main() {
 		c.JSON(http.StatusOK, gin.H{"title": "time_calculous_GoAPI", "presentation": "", "description": "", "links": gin.H{"github": "https://github.com/Vicken-Ghoubiguian/time_calculous_GoAPI", "dockerhub": ""}})
 	})
 
-	// Definition of the 'wished_wday_in_choosen_month' to use the '' function...
+	// Definition of the 'wished_wday_in_choosen_month' to use the 'wished_wday_in_choosen_month' function...
 	r.GET("/wished_wday_in_choosen_month/:wday/:month", func(c *gin.Context) {
 
 		//
@@ -50,21 +50,21 @@ func main() {
 		c.JSON(http.StatusOK, gin.H{"data": "TODO"})
 	})
 
-	// Definition of the 'wished_number_in_year_is_day_in_choosen_year' to use the '' function...
+	// Definition of the 'wished_number_in_year_is_day_in_choosen_year' to use the 'wished_number_in_year_is_day_in_choosen_year' function...
 	r.GET("/wished_number_in_year_is_day_in_choosen_year/:mday/:month/:year", func(c *gin.Context) {
 
 		//
 		c.JSON(http.StatusOK, gin.H{"data": "TODO"})
 	})
 
-	// Definition of the 'calculations_on_date_and_time_from_today' to use the '' function...
+	// Definition of the 'calculations_on_date_and_time_from_today' to use the 'calculations_on_date_and_time_from_today' function...
 	r.GET("/calculations_on_date_and_time_from_today/:milleniums/:centuries/:decades/:years/:months/:weeks/:days/:hours/:minutes/:seconds", func(c *gin.Context) {
 
 		//
 		c.JSON(http.StatusOK, gin.H{"data": "TODO"})
 	})
 
-	// Definition of the 'number_of_days_in_choosen_month_in_choosen_year' to use the '' function...
+	// Definition of the 'number_of_days_in_choosen_month_in_choosen_year' to use the 'number_of_days_in_choosen_month_in_choosen_year' function...
 	r.GET("/number_of_days_in_choosen_month_in_choosen_year/:month/:year", func(c *gin.Context) {
 
 		//
