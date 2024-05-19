@@ -16,7 +16,7 @@ func main() {
 	r := gin.Default()
 
 	//
-	r.StaticFile("/favicon.ico", "./logo/favicon.ico")
+	r.StaticFile("/favicon.ico", "./resources/favicon.ico")
 
 	//
 	r.GET("/", func(c *gin.Context) {
