@@ -44,5 +44,33 @@ func main() {
 	})
 
 	//
+	r.GET("/wished_wday_in_choosen_year/:year/:wday/:number_of_weekday", func(c *gin.Context) {
+
+		//
+		c.JSON(http.StatusOK, gin.H{"data": "TODO"})
+	})
+
+	//
+	r.GET("/wished_number_in_year_is_day_in_choosen_year/:mday/:month/:year", func(c *gin.Context) {
+
+		//
+		c.JSON(http.StatusOK, gin.H{"data": "TODO"})
+	})
+
+	//
+	r.GET("/calculations_on_date_and_time_from_today/:milleniums/:centuries/:decades/:years/:months/:weeks/:days/:hours/:minutes/:seconds", func(c *gin.Context) {
+
+		//
+		c.JSON(http.StatusOK, gin.H{"data": "TODO"})
+	})
+
+	//
+	/*r.GET("/wished_wday_in_choosen_month/:wday/:month", func(c *gin.Context) {
+
+		//
+		c.JSON(http.StatusOK, gin.H{"data": "TODO"})
+	})*/
+
+	//
 	r.Run()
 }
