@@ -29,6 +29,11 @@ func main() {
 	r.GET("/wished_wday_in_choosen_month/:wday/:month", func(c *gin.Context) {
 
 		//
+		/*wday := c.Param("wday")
+		  month := c.Param("month")
+		*/
+
+		//
 		c.JSON(http.StatusOK, gin.H{"data": "TODO"})
 	})
 
@@ -47,11 +52,23 @@ func main() {
 	r.GET("/wished_wday_in_choosen_year/:year/:wday/:number_of_weekday", func(c *gin.Context) {
 
 		//
+		/*year := c.Param("year")
+		  wday := c.Param("wday")
+		  number_of_weekday = c.Param("number_of_weekday")
+		*/
+
+		//
 		c.JSON(http.StatusOK, gin.H{"data": "TODO"})
 	})
 
 	// Definition of the 'wished_number_in_year_is_day_in_choosen_year' to use the 'wished_number_in_year_is_day_in_choosen_year' function...
 	r.GET("/wished_number_in_year_is_day_in_choosen_year/:mday/:month/:year", func(c *gin.Context) {
+
+		//
+		/*mday := c.Param("mday")
+		  wday := c.Param("wday")
+		  year := c.Param("year")
+		*/
 
 		//
 		c.JSON(http.StatusOK, gin.H{"data": "TODO"})
@@ -66,6 +83,11 @@ func main() {
 
 	// Definition of the 'number_of_days_in_choosen_month_in_choosen_year' to use the 'number_of_days_in_choosen_month_in_choosen_year' function...
 	r.GET("/number_of_days_in_choosen_month_in_choosen_year/:month/:year", func(c *gin.Context) {
+
+		//
+		/*year := c.Param("year")
+		  month := c.Param("month")
+		*/
 
 		//
 		c.JSON(http.StatusOK, gin.H{"data": "TODO"})
