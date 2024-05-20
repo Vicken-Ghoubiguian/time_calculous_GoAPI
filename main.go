@@ -22,7 +22,7 @@ func main() {
 	r.GET("/", func(c *gin.Context) {
 
 		//
-		c.JSON(http.StatusOK, gin.H{"title": "time_calculous_GoAPI", "presentation": "", "description": "API written in Go to use the 'time_calculous' library functions...", "links": gin.H{"github": "https://github.com/Vicken-Ghoubiguian/time_calculous_GoAPI", "dockerhub": ""}})
+		c.JSON(http.StatusOK, gin.H{"title": "time_calculous_GoAPI", "presentation": "API written in Go to use the 'time_calculous' library functions...", "description": "", "links": gin.H{"github": "https://github.com/Vicken-Ghoubiguian/time_calculous_GoAPI", "dockerhub": ""}})
 	})
 
 	// Definition of the 'wished_wday_in_choosen_month' to use the 'wished_wday_in_choosen_month' function...
