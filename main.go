@@ -1,6 +1,5 @@
 package main
 
-//
 import (
 
 	//
@@ -9,6 +8,12 @@ import (
 	//
 	"github.com/gin-gonic/gin"
 )
+
+// #cgo CFLAGS: -I time_calculous
+/* #include <time.h>
+   #include "time_calculous/time_calculous.h"
+*/
+import "C"
 
 // Definition of the 'main' function which is the entry code of the program
 func main() {
