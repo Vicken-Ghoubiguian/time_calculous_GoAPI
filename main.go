@@ -10,6 +10,7 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
+// Definition of the 'main' function which is the entry code of the program
 func main() {
 
 	//
