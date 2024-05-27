@@ -81,6 +81,13 @@ func main() {
 		c.JSON(http.StatusOK, gin.H{"data": "TODO"})
 	})
 
+	// Definition of the 'calculations_on_date_and_time' route to use the 'calculations_on_date_and_time' function from a wished datetime...
+	r.GET("/calculations_on_date_and_time/:datetime_as_timestamp/:milleniums/:centuries/:decades/:years/:months/:weeks/:days/:hours/:minutes/:seconds", func(c *gin.Context) {
+
+		//
+		c.JSON(http.StatusOK, gin.H{"data": "TODO"})
+	})
+
 	// Definition of the 'number_of_days_in_choosen_month_in_choosen_year' route to use the 'number_of_days_in_choosen_month_in_choosen_year' function...
 	r.GET("/number_of_days_in_choosen_month_in_choosen_year/:month/:year", func(c *gin.Context) {
 
