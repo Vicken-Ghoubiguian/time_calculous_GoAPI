@@ -78,11 +78,36 @@ func main() {
 	r.GET("/calculations_on_date_and_time_from_today/:milleniums/:centuries/:decades/:years/:months/:weeks/:days/:hours/:minutes/:seconds", func(c *gin.Context) {
 
 		//
+		/*milleniums := c.Param("milleniums")
+		centuries := c.Param("centuries")
+		decades := c.Param("decades")
+		years := c.Param("years")
+		months := c.Param("months")
+		weeks := c.Param("weeks")
+		days := c.Param("days")
+		hours := c.Param("hours")
+		minutes := c.Param("minutes")
+		seconds := c.Param("seconds")*/
+
+		//
 		c.JSON(http.StatusOK, gin.H{"data": "TODO"})
 	})
 
 	// Definition of the 'calculations_on_date_and_time' route to use the 'calculations_on_date_and_time' function from a wished datetime...
 	r.GET("/calculations_on_date_and_time/:datetime_as_timestamp/:milleniums/:centuries/:decades/:years/:months/:weeks/:days/:hours/:minutes/:seconds", func(c *gin.Context) {
+
+		//
+		/*datetime_as_timestamp := c.Param("datetime_as_timestamp")
+		milleniums := c.Param("milleniums")
+		centuries := c.Param("centuries")
+		decades := c.Param("decades")
+		years := c.Param("years")
+		months := c.Param("months")
+		weeks := c.Param("weeks")
+		days := c.Param("days")
+		hours := c.Param("hours")
+		minutes := c.Param("minutes")
+		seconds := c.Param("seconds")*/
 
 		//
 		c.JSON(http.StatusOK, gin.H{"data": "TODO"})
@@ -93,8 +118,7 @@ func main() {
 
 		//
 		/*year := c.Param("year")
-		  month := c.Param("month")
-		*/
+		month := c.Param("month")*/
 
 		//
 		c.JSON(http.StatusOK, gin.H{"data": "TODO"})
