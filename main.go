@@ -74,7 +74,7 @@ func main() {
 		c.JSON(http.StatusOK, gin.H{"data": "TODO"})
 	})
 
-	// Definition of the 'calculations_on_date_and_time_from_today' to use the 'calculations_on_date_and_time_from_today' function...
+	// Definition of the 'calculations_on_date_and_time_from_today' to use the 'calculations_on_date_and_time' function from the today datetime...
 	r.GET("/calculations_on_date_and_time_from_today/:milleniums/:centuries/:decades/:years/:months/:weeks/:days/:hours/:minutes/:seconds", func(c *gin.Context) {
 
 		//
